@@ -11,11 +11,16 @@ contract StorageFactory{
         simpleStorageArray.push(simpleStorage);
     } 
     function sfStore(uint256 _simpleStorageIndex, uint256 simpleStorageNumber) public {
-        Storage simpleStorage = Storage(address(simpleStorageArray[_simpleStorageIndex]));
+        /* Storage simpleStorage = Storage(address(simpleStorageArray[_simpleStorageIndex]));
         simpleStorage.store(simpleStorageNumber);
+        o forma sin factorizar, instanciando la variable, en siguiente se hace directmaente
+         */
+        Storage(address(simpleStorageArray[_simpleStorageIndex])).store(simpleStorageNumber);
+
     }
     function sfGet(uint256 _simpleStorageIndex) public view returns (uint256){
-        Storage simpleStorage = Storage(address(simpleStorageArray[_simpleStorageIndex]));
-        return simpleStorage.retrieve();
+      /*   Storage simpleStorage = Storage(address(simpleStorageArray[_simpleStorageIndex]));
+        return simpleStorage.retrieve(); */
+        return Storage(address(simpleStorageArray[_simpleStorageIndex])).retrieve();
     }
 }
