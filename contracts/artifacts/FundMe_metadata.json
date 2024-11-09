@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.27+commit.40a35a09"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -29,6 +29,25 @@
 				"name": "fund",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "btcAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "getConversionRate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -94,11 +113,11 @@
 			]
 		},
 		"contracts/FundeMe.sol": {
-			"keccak256": "0xe88bcece2f7ba978a0a097d2eb45548bc7d06a31da7f1f713869bb651e36ea17",
+			"keccak256": "0x5a80f1fdfa205a72a3ff329b052db06fb93fc0c19ccab43862377753b2e4b1b2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5d40f5547ae43f2dbdd28e8284e4eba6900bba7a47bbeb154e566952e9590db9",
-				"dweb:/ipfs/QmQ3XJ9DPVfjDssArjDDFpRm8Y7oeozaCcrBS5fe9BqmT9"
+				"bzz-raw://6548e226a1745ac7b82c42f9cc9d1541c082aaf1fb522713bfbb045d842bdd5c",
+				"dweb:/ipfs/QmUzjbrTZm3PfDmfGgmsnDjoqrge74D9Q5MFyVRiWX9V2k"
 			]
 		}
 	},
